@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+    <category label="Calidad de imagenes">
+        <setting type="lsep" label="Entre mayor sea la calidad de las imagenes[CR]mas espacio ocupan en el cache de tu dispositivo." />
+        <setting label="Posters" type="select" id="pos_qy" default="500 px" values="92 px|154 px|185 px|342 px|500 px|780 px|Mejor" />
+        <setting label="Fanarts" type="select" id="fan_qy" default="780 px" values="92 px|154 px|185 px|342 px|500 px|780 px|Mejor" />
+    </category>
+    <category label="Subtitulos">
+        <setting label="Descargar subtitulos si los encuentra?" type="select" id="c" default="No" values="No|Si" />
+    </category>
+    <category label="Login">
+        <setting label="Inicia Sesion en UPtoBOX" type="lsep" />
+        <setting label="Usuario" type="text" id="username_utb" default="" />
+        <setting label="Contraseña" type="text" id="password_utb" option="hidden" enable="!eq(-1,)" default="" />
+        <setting label="[B]Obtener Token de Uptobox (Presiona aqui)[/B]" type="action" option="close" action="RunPlugin(plugin://plugin.video.FusionOrg/?mode=get_token_uptobox)" />
+    </category>
+    <category label="Language">
+        <setting label="Select Language" type="select" id="language" default="Latino" values="Latino" />
+    </category>
+</settings>
